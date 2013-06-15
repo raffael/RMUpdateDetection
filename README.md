@@ -9,9 +9,10 @@ Easy app version transition recognizer with delegate pattern.
 2. Download and import @danhanly's awesome ```VersionComparator``` library from, e.g. GitHub: https://github.com/danhanly/VersionComparator
 3. In your ```-(void) applicationDidFinishLoading;```method, set the delegate and trigger the checking.
 
+```
 	[[RMUpdateDetection sharedInstance] setDelegate:self];
-	
 	[[RMUpdateDetection sharedInstance] check];
+```
 
 4. Implement the delegate protocol, e.g.:
 
