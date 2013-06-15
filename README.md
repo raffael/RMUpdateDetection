@@ -10,6 +10,7 @@ Easy app version transition recognizer with delegate pattern.
 3. In your ```-(void) applicationDidFinishLoading;```method, set the delegate and trigger the checking.
 
 	[[RMUpdateDetection sharedInstance] setDelegate:self];
+	
 	[[RMUpdateDetection sharedInstance] check];
 
 4. Implement the delegate protocol, e.g.:
