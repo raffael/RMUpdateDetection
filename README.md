@@ -16,9 +16,11 @@ Easy app version transition recognizer with delegate pattern.
 
 4. Implement the delegate protocol, e.g.:
 
+```
 		- (void) userDidUpdateFrom: (NSString *) oldVersion to: (NSString *) currentVersion {
 			// Hurray, the user did update to our most recent version!
 	}
+```
 
 That's it!
 
