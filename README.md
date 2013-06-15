@@ -14,7 +14,7 @@ Easy app version transition recognizer with delegate pattern.
 	[[RMUpdateDetection sharedInstance] check];
 ```
 
-4. Implement the delegate protocol, e.g.:
+Implement the delegate protocol, e.g.:
 
 ```
 		- (void) userDidUpdateFrom: (NSString *) oldVersion to: (NSString *) currentVersion {
