@@ -28,8 +28,8 @@
 @end
 
 @interface RMUpdateDetection : NSObject
-@property (retain) id<RMUpdateDetectionDelegate> delegate;
-@property (retain) NSString* appVersionPrefKey;
+@property (weak) id<RMUpdateDetectionDelegate> delegate;
+@property (copy) NSString* appVersionPrefKey;
 
 /** If set, no error will be raised if no previous app version could be read from the NSUserDefaults. Also, if set, the current version will not be written to the NSUserDefaults automatically, instead you would have to call -writeVersion; manually while handling the error. */
 @property (assign) BOOL raiseErrorIfLastVersionIsNotStored;
